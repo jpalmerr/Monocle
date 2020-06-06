@@ -21,4 +21,11 @@ besides of `A` value (as in Prism)
 – in other words transformation from S to A is lossless.
 
 - `get: S => A`
-- `reverseGet: A => S` 
+- `reverseGet: A => S`
+
+**What is Optional**
+
+- `getOption: S => Option[A]`
+- `set: A => S => S`
+
+ 
