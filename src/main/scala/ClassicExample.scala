@@ -1,9 +1,5 @@
+import models._
 import monocle.Lens
-
-// business logic
-case class Person(fullName: String, address: Address)
-case class Address(city: String, street: Street)
-case class Street(name: String, number: Int)
 
 // Lens definitions
 object PersonLenses {
@@ -16,7 +12,7 @@ object ClassicExample extends App {
 
   import PersonLenses._
 
-  val bob = Person("Bob Dylan", Address("New York", Street("some", 67)))
+  val bob = Person("Bob Dylan", Address("New York", Street(67, "some")))
 
   println("with copy")
   println(upperCaseWithCopy(bob))
